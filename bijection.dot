@@ -1,0 +1,24 @@
+digraph G {
+    graph [style="rounded"];
+
+    subgraph cluster_men {
+        m1;
+        m2;
+        m3;
+        m4;
+        label = "Men";
+    }
+
+    subgraph cluster_women {
+        w1;
+        w2;
+        w3;
+        w4;
+        label = "Women";
+    }
+
+    m1 -> w1;
+    m2 -> w2;
+    m3 -> w3;
+    m4 -> w4;
+}
